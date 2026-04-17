@@ -1,23 +1,143 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const {
+	title = 'Sunshine Chess | Fun Chess for Kids in Florida',
+	description = 'Playful chess classes for kids across Florida! Step Up For Students approved. Join Coach Chris for fun lessons and tournaments.',
+} = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
-	<body>
-		<slot />
+	<body class="bg-cream font-sans text-slate-800" style="font-family: 'Nunito', sans-serif;">
+		<!-- SEO -->
+		<div class="absolute -left-full w-px h-px overflow-hidden" aria-hidden="true">
+			Fun chess classes Florida, Kids chess lessons, Step Up For Students chess, Sunshine Chess Academy, Coach Chris chess, Chess camp for kids
+			Florida, Playful chess instruction, Youth chess club Florida
+		</div>
+
+		<!-- Navigation - ROUNDER & PLAYFUL -->
+		<nav class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-sm shadow-soft">
+			<div class="max-w-6xl mx-auto px-4 sm:px-6">
+				<div class="flex justify-between items-center h-24">
+					<!-- Logo - More Playful -->
+					<a href="/" class="flex items-center gap-3 group">
+						<div class="flex flex-col leading-none">
+							<img src="./img/logo.png" alt="Sunshine Chess Logo" style="width: 200px;" class="p-2" />
+						</div>
+					</a>
+
+					<!-- Desktop Menu - Pills -->
+					<div class="hidden md:flex items-center gap-3">
+						<a href="/" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">Home</a>
+						<a href="/lessons" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">Lessons</a>
+						<a href="/faq" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">FAQ</a>
+						<a href="/contact" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">Contact</a>
+						<a href="/about" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">About Me</a>
+						<a href="/register" class="register-pill text-white hover:shadow-xl hover:scale-105 transition-all">Register 🚀</a>
+					</div>
+
+					<!-- Mobile Button -->
+					<button
+						id="mobileMenuBtn"
+						class="md:hidden w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-2xl text-white text-xl shadow-lg flex items-center justify-center"
+					>
+						☰
+					</button>
+				</div>
+			</div>
+
+			<!-- Mobile Menu -->
+			<div id="mobileMenu" class="hidden md:hidden fixed inset-0 top-24 bg-white/98 backdrop-blur-lg z-40 p-6">
+				<div class="flex flex-col gap-4">
+					<a href="/" class="nav-pill text-center text-lg text-slate-700 py-3">Home</a>
+					<a href="/lessons" class="Nav-pill text-center text-lg text-slate-700 py-3">Lessons</a>
+					<a href="/faq" class="Nav-pill text-center text-lg text-slate-700 py-3">FAQ</a>
+					<a href="/contact" class="Nav-pill text-center text-lg text-slate-700 py-3">Contact</a>
+					<a href="/about" class="Nav-pill text-center text-lg text-slate-700 py-3">About Me</a>
+					<a href="/register" class="register-pill text-center text-lg text-white py-4 mt-2">Register Now 🚀</a>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HERO - FUN & PLAYFUL -->
+		<main class="pt-24">
+			<slot />
+		</main>
+
+		<!-- FOOTER - ROUNDER -->
+		<footer class="bg-slate-800 text-white rounded-t-[3rem] mt-20">
+			<div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+				<div class="text-center mb-8">
+					<div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full">
+						<span class="text-3xl">😎</span>
+						<div>
+							<h3 class="text-2xl font-bold text-yellow-400" style="font-family: 'Fredoka', sans-serif;">Sunshine Chess</h3>
+							<p class="text-white/70 text-sm">Where Every Move Shines! ✨</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+					<div>
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg">🌟 Quick Links</h4>
+						<ul class="space-y-2 text-white/80">
+							<li><a href="/lessons" class="hover:text-yellow-400 transition-colors">📚 Lessons</a></li>
+							<li><a href="/about" class="hover:text-yellow-400 transition-colors">👨‍🏫 About Me</a></li>
+							<li><a href="/faq" class="hover:text-yellow-400 transition-colors">❓ FAQ</a></li>
+							<li><a href="/register" class="hover:text-yellow-400 transition-colors">🚀 Register</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg">🎓 Programs</h4>
+						<ul class="space-y-2 text-white/80">
+							<li><a href="/step-up" class="hover:text-yellow-400 transition-colors">Step Up Approved</a></li>
+							<li><a href="/locations" class="hover:text-yellow-400 transition-colors">📍 Locations</a></li>
+							<li><a href="/contact" class="hover:text-yellow-400 transition-colors">📧 Contact</a></li>
+						</ul>
+					</div>
+
+					<div>
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg">📞 Get In Touch</h4>
+						<ul class="space-y-2 text-white/80">
+							<li>chris@sunshinechess.com</li>
+							<li>(305) 555-CHESS</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="mt-8 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
+					<p>© 2026 <span class="text-yellow-400 font-bold">Sunshine Chess</span> 🌴 Step Up For Students Approved</p>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			const btn = document.getElementById('mobileMenuBtn');
+			const menu = document.getElementById('mobileMenu');
+			btn?.addEventListener('click', () => {
+				menu?.classList.toggle('hidden');
+			});
+		</script>
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
