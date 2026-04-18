@@ -1,0 +1,105 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Register | Sunshine Chess - Join the Fun! 🚀">
+    <!-- PAGE HERO -->
+    <section class="relative bg-gradient-to-br from-yellow-100 via-orange-50 to-coral-50 py-16 lg:py-20 overflow-hidden">
+        <div class="absolute top-10 left-10 w-32 h-32 bg-yellow-300 rounded-full opacity-40 blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-coral-300 rounded-full opacity-30 blur-3xl animate-pulse" style="animation-delay: 1s;">
+        </div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <div
+                class="inline-flex items-center gap-2 bg-white px-5 py-3 rounded-full shadow-lg border-4 border-yellow-400 mb-6 transform hover:scale-105 transition-transform"
+            >
+                <span class="text-xl">📝</span>
+                <span class="font-bold text-slate-800">Join the Chess Club!</span>
+            </div>
+
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-4" style="font-family: 'Fredoka', sans-serif;">
+                Ready to Make Your <span class="text-orange-500 relative">
+                    First Move?
+                    <span class="absolute -bottom-2 left-0 w-full h-4 bg-yellow-300 rounded-full -z-10 opacity-60"></span>
+                </span>
+            </h1>
+
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+                Fill out the form below and Coach Chris will reach out to get you started on your chess adventure! 🌟
+            </p>
+        </div>
+    </section>
+
+    <!-- GOOGLE FORM SECTION -->
+    <section class="py-12 lg:py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <!-- Fun Notice -->
+            <div class="bg-gradient-to-r from-green-50 to-sky-50 rounded-3xl p-6 mb-8 border-4 border-green-200 flex items-start gap-4">
+                <span class="text-4xl">💡</span>
+                <div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-1">Quick & Easy!</h3>
+                    <p class="text-slate-600">
+                        Your info goes straight to Coach Chris. No account needed — just fill out the form and you're all set! Responses are saved
+                        automatically.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Google Form Iframe Card -->
+            <div class="bg-white rounded-[2.5rem] shadow-2xl p-3 lg:p-6 border-4 border-yellow-200">
+                <div class="bg-slate-50 rounded-[2rem] overflow-hidden relative">
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSfqlkUN9nlDsIiHX1t_fcWHZkrMuSTC18fI6wzPSo1rD_1bBg/viewform?embedded=true"
+                        width="100%"
+                        height="1200"
+                        frameborder="0"
+                        marginheight="0"
+                        marginwidth="0"
+                        class="w-full block"
+                        style="min-height: 961px;"
+                    >
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Alternative Contact -->
+            <div class="mt-8 text-center">
+                <p class="text-slate-500 mb-2">Having trouble with the form?</p>
+                <a href="/contact" class="inline-flex items-center gap-2 text-orange-500 font-bold hover:text-orange-600 transition-colors">
+                    Contact Coach Chris directly 📧
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUN TRUST SECTION -->
+    <section class="py-12 bg-yellow-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-bold text-slate-800 mb-8" style="font-family: 'Fredoka', sans-serif;">What Happens Next? 🔮</h3>
+
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-xl mx-auto mb-3 shadow-md">1️⃣</div>
+                    <p class="font-bold text-slate-800">You Submit</p>
+                    <p class="text-sm text-slate-600">Fill out the form above</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-coral-400 rounded-full flex items-center justify-center text-xl mx-auto mb-3 shadow-md">2️⃣</div>
+                    <p class="font-bold text-slate-800">We Email</p>
+                    <p class="text-sm text-slate-600">Within 24 hours</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center text-xl mx-auto mb-3 shadow-md">3️⃣</div>
+                    <p class="font-bold text-slate-800">Pick a Time</p>
+                    <p class="text-sm text-slate-600">Schedule your first class</p>
+                </div>
+                <div class="bg-white rounded-3xl p-6 shadow-md hover:shadow-lg transition-shadow transform hover:-translate-y-1">
+                    <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center text-xl mx-auto mb-3 shadow-md">4️⃣</div>
+                    <p class="font-bold text-slate-800">Start Playing!</p>
+                    <p class="text-sm text-slate-600">Begin your chess journey</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
