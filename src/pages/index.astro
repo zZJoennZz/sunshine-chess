@@ -74,53 +74,107 @@ import Layout from '../layouts/Layout.astro';
 
 				<!-- Right - Fun Sun Character -->
 				<div class="relative flex justify-center items-center h-[400px] lg:h-[500px]">
-					<!-- Main Sun -->
-					<div class="sun-fun relative w-64 h-64 lg:w-80 lg:h-80">
+					<!-- Main Sun - LOWER z-index -->
+					<div class="sun-fun relative w-64 h-64 lg:w-80 lg:h-80 z-0">
 						<!-- Sun Body -->
-						<img src="./img/sunshine.png" alt="Sunshine Chess Logo" />
+						<img
+							src="/img/sunshine.png"
+							alt="Sunshine Chess Logo"
+							class="w-full h-full object-contain relative z-0 pointer-events-none"
+						/>
 
-						<!-- Rays -->
-						<div class="absolute inset-0 animate-spin" style="animation: spin 20s linear infinite;">
-							<div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full shadow-lg">✨</div>
-							<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-orange-400 rounded-full shadow-lg">⭐</div>
-							<div class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 bg-coral-400 rounded-full shadow-lg">💫</div>
-							<div class="absolute right-0 top-1/2 -translate-y-1/2 w-6 h-6 bg-purple-400 rounded-full shadow-lg">🌟</div>
+						<!-- Rays - also lower -->
+						<div class="absolute inset-0 animate-spin z-0" style="animation: spin 20s linear infinite;">
+							<div class="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-yellow-400 rounded-full shadow-lg z-0">✨</div>
+							<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-8 h-8 bg-orange-400 rounded-full shadow-lg z-0">⭐</div>
+							<div class="absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 bg-coral-400 rounded-full shadow-lg z-0">💫</div>
+							<div class="absolute right-0 top-1/2 -translate-y-1/2 w-6 h-6 bg-purple-400 rounded-full shadow-lg z-0">🌟</div>
 						</div>
 					</div>
 
-					<!-- Orbiting Chess Pieces -->
-					<div class="absolute w-full h-full" style="animation: orbit-fun 15s linear infinite;">
+					<!-- Orbiting Chess Pieces - HIGHER z-index -->
+					<div class="absolute w-full h-full z-10 pointer-events-none" style="animation: orbit-fun 15s linear infinite;">
 						<div
-							class="absolute top-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-yellow-300 transform hover:scale-110 transition-transform"
+							class="chess-piece group absolute top-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-yellow-300 transform hover:scale-110 transition-transform cursor-help pointer-events-auto"
 						>
 							♟️
-						</div>
-					</div>
-					<div class="absolute w-full h-full" style="animation: orbit-fun 15s linear infinite reverse; animation-delay: -3.75s;">
-						<div
-							class="absolute bottom-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-coral-300 transform hover:scale-110 transition-transform"
-						>
-							♞
-						</div>
-					</div>
-					<div class="absolute w-full h-full" style="animation: orbit-fun 15s linear infinite; animation-delay: -7.5s;">
-						<div
-							class="absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-purple-300 transform hover:scale-110 transition-transform"
-						>
-							♝
-						</div>
-					</div>
-					<div class="absolute w-full h-full" style="animation: orbit-fun 15s linear infinite reverse; animation-delay: -11.25s;">
-						<div
-							class="absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-sky-300 transform hover:scale-110 transition-transform"
-						>
-							♜
+							<div
+								class="piece-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-48 bg-slate-800 text-white text-sm rounded-2xl p-4 opacity-0 invisible transition-all duration-300 pointer-events-none shadow-xl z-50"
+							>
+								<div class="font-bold text-yellow-400 mb-1 text-base">♟️ Pawn</div>
+								<p class="text-xs leading-relaxed">
+									Moves forward 1 square (or 2 on first move). Captures diagonally. Promotes to any piece at the other end!
+								</p>
+								<div class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-slate-800"></div>
+							</div>
 						</div>
 					</div>
 
-					<!-- Floating Decorations -->
-					<div class="absolute top-10 right-10 text-4xl animate-bounce" style="animation-duration: 2s;">🎈</div>
-					<div class="absolute bottom-20 left-5 text-3xl animate-bounce" style="animation-duration: 2.5s; animation-delay: 0.5s;">🌟</div>
+					<div
+						class="absolute w-full h-full z-10 pointer-events-none"
+						style="animation: orbit-fun 15s linear infinite reverse; animation-delay: -3.75s;"
+					>
+						<div
+							class="chess-piece group absolute bottom-0 left-1/2 -translate-x-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-coral-300 transform hover:scale-110 transition-transform cursor-help pointer-events-auto"
+						>
+							♞
+							<div
+								class="piece-tooltip absolute bottom-full left-1/2 -translate-x-1/2 mb-3 w-48 bg-slate-800 text-white text-sm rounded-2xl p-4 opacity-0 invisible transition-all duration-300 pointer-events-none shadow-xl z-50"
+							>
+								<div class="font-bold text-coral-400 mb-1 text-base">♞ Knight</div>
+								<p class="text-xs leading-relaxed">
+									Moves in an "L" shape: 2 squares one way, then 1 square perpendicular. Can jump over other pieces!
+								</p>
+								<div class="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-slate-800"></div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="absolute w-full h-full z-10 pointer-events-none"
+						style="animation: orbit-fun 15s linear infinite; animation-delay: -7.5s;"
+					>
+						<div
+							class="chess-piece group absolute left-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-purple-300 transform hover:scale-110 transition-transform cursor-help pointer-events-auto"
+						>
+							♝
+							<div
+								class="piece-tooltip absolute left-full top-1/2 -translate-y-1/2 ml-3 w-48 bg-slate-800 text-white text-sm rounded-2xl p-4 opacity-0 invisible transition-all duration-300 pointer-events-none shadow-xl z-50"
+							>
+								<div class="font-bold text-purple-400 mb-1 text-base">♝ Bishop</div>
+								<p class="text-xs leading-relaxed">
+									Moves diagonally any number of squares. Stays on the same color square for the whole game!
+								</p>
+								<div class="absolute top-1/2 right-full -translate-y-1/2 border-8 border-transparent border-r-slate-800"></div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="absolute w-full h-full z-10 pointer-events-none"
+						style="animation: orbit-fun 15s linear infinite reverse; animation-delay: -11.25s;"
+					>
+						<div
+							class="chess-piece group absolute right-0 top-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-2xl shadow-lg flex items-center justify-center text-2xl border-3 border-sky-300 transform hover:scale-110 transition-transform cursor-help pointer-events-auto"
+						>
+							♜
+							<div
+								class="piece-tooltip absolute right-full top-1/2 -translate-y-1/2 mr-3 w-48 bg-slate-800 text-white text-sm rounded-2xl p-4 opacity-0 invisible transition-all duration-300 pointer-events-none shadow-xl z-50"
+							>
+								<div class="font-bold text-sky-400 mb-1 text-base">♜ Rook</div>
+								<p class="text-xs leading-relaxed">
+									Moves horizontally or vertically any number of squares. Teams up with the King to castle!
+								</p>
+								<div class="absolute top-1/2 left-full -translate-y-1/2 border-8 border-transparent border-l-slate-800"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Floating Decorations - also high z-index -->
+					<div class="absolute top-10 right-10 text-4xl animate-bounce z-10" style="animation-duration: 2s;">🎈</div>
+					<div class="absolute bottom-20 left-5 text-3xl animate-bounce z-10" style="animation-duration: 2.5s; animation-delay: 0.5s;">
+						🌟
+					</div>
 				</div>
 			</div>
 		</div>
@@ -469,4 +523,13 @@ import Layout from '../layouts/Layout.astro';
 			<p class="text-white/80 mt-6 text-sm">⭐ Step Up For Students scholarships accepted! Questions? Call (305) 555-CHESS</p>
 		</div>
 	</section>
+	<style>
+		.chess-piece:hover {
+			z-index: 100;
+		}
+		.chess-piece:hover .piece-tooltip {
+			opacity: 1;
+			visibility: visible;
+		}
+	</style>
 </Layout>
