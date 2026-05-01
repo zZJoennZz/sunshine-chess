@@ -20,15 +20,15 @@ const {
 		<title>{title}</title>
 		<meta name="description" content={description} />
 
-		<!-- Fonts -->
+		<!-- Fonts: Montserrat (Heading), Inter (Body), Space Mono (Accent) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="bg-cream font-sans text-slate-800" style="font-family: 'Nunito', sans-serif;">
+	<body class="bg-cream font-sans text-slate-800 antialiased" style="font-family: 'Inter', sans-serif;">
 		<!-- SEO -->
 		<div class="absolute -left-full w-px h-px overflow-hidden" aria-hidden="true">
 			Fun chess classes Florida, Kids chess lessons, Step Up For Students chess, Sunshine Chess Academy, Coach Chris chess, Chess camp for kids
@@ -53,7 +53,13 @@ const {
 						<a href="/faq" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">FAQ</a>
 						<a href="/contact" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">Contact</a>
 						<a href="/about" class="nav-pill text-slate-600 hover:bg-yellow-100 hover:text-slate-900">About Me</a>
-						<a href="/register" class="register-pill text-white hover:shadow-xl hover:scale-105 transition-all">Register 🚀</a>
+						<a
+							href="/register"
+							class="register-pill text-white hover:shadow-xl hover:scale-105 transition-all"
+							style="font-family: 'Montserrat', sans-serif;"
+						>
+							Register 🚀
+						</a>
 					</div>
 
 					<!-- Mobile Button -->
@@ -76,10 +82,18 @@ const {
 				<a href="/faq" class="nav-pill text-center text-lg text-slate-700 py-4">FAQ</a>
 				<a href="/contact" class="nav-pill text-center text-lg text-slate-700 py-4">Contact</a>
 				<a href="/about" class="nav-pill text-center text-lg text-slate-700 py-4">About Me</a>
-				<a href="/register" class="register-pill text-center text-lg text-white py-5 mt-4">Register Now 🚀</a>
+				<a href="/register" class="register-pill text-center text-lg text-white py-5 mt-4" style="font-family: 'Montserrat', sans-serif;">
+					Register Now 🚀
+				</a>
 
 				<!-- Close button -->
-				<button id="closeMobileMenu" class="mt-4 w-full py-3 text-slate-500 font-semibold text-center">Close ✕</button>
+				<button
+					id="closeMobileMenu"
+					class="mt-4 w-full py-3 text-slate-500 font-semibold text-center"
+					style="font-family: 'Montserrat', sans-serif;"
+				>
+					Close ✕
+				</button>
 			</div>
 		</div>
 
@@ -95,15 +109,17 @@ const {
 					<div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full">
 						<span class="text-3xl">😎</span>
 						<div>
-							<h3 class="text-2xl font-bold text-yellow-400" style="font-family: 'Fredoka', sans-serif;">Sunshine Chess</h3>
-							<p class="text-white/70 text-sm">Where Every Move Shines! ✨</p>
+							<h3 class="text-2xl font-bold text-yellow-400" style="font-family: 'Montserrat', sans-serif;">Sunshine Chess</h3>
+							<p class="text-white/70 text-sm" style="font-family: 'Space Mono', monospace; font-size: 0.75rem;">
+								WHERE EVERY MOVE SHINES ✨
+							</p>
 						</div>
 					</div>
 				</div>
 
 				<div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
 					<div>
-						<h4 class="text-yellow-400 font-bold mb-4 text-lg">🌟 Quick Links</h4>
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg" style="font-family: 'Montserrat', sans-serif;">🌟 Quick Links</h4>
 						<ul class="space-y-2 text-white/80">
 							<li><a href="/lessons" class="hover:text-yellow-400 transition-colors">📚 Lessons</a></li>
 							<li><a href="/about" class="hover:text-yellow-400 transition-colors">👨‍🏫 About Me</a></li>
@@ -113,7 +129,7 @@ const {
 					</div>
 
 					<div>
-						<h4 class="text-yellow-400 font-bold mb-4 text-lg">🎓 Programs</h4>
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg" style="font-family: 'Montserrat', sans-serif;">🎓 Programs</h4>
 						<ul class="space-y-2 text-white/80">
 							<li><a href="/step-up" class="hover:text-yellow-400 transition-colors">Step Up Approved</a></li>
 							<li><a href="/locations" class="hover:text-yellow-400 transition-colors">📍 Locations</a></li>
@@ -122,16 +138,16 @@ const {
 					</div>
 
 					<div>
-						<h4 class="text-yellow-400 font-bold mb-4 text-lg">📞 Get In Touch</h4>
-						<ul class="space-y-2 text-white/80">
+						<h4 class="text-yellow-400 font-bold mb-4 text-lg" style="font-family: 'Montserrat', sans-serif;">📞 Get In Touch</h4>
+						<ul class="space-y-2 text-white/80" style="font-family: 'Space Mono', monospace; font-size: 0.875rem;">
 							<li>chris@sunshinechess.com</li>
 							<li>(305) 555-CHESS</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="mt-8 pt-8 border-t border-white/20 text-center text-white/50 text-sm">
-					<p>© 2026 <span class="text-yellow-400 font-bold">Sunshine Chess</span> 🌴 Step Up For Students Approved</p>
+				<div class="mt-8 pt-8 border-t border-white/20 text-center text-white/50 text-sm" style="font-family: 'Space Mono', monospace;">
+					<p>© 2026 <span class="text-yellow-400 font-bold">SUNSHINE CHESS</span> 🌴 STEP UP APPROVED</p>
 				</div>
 			</div>
 		</footer>
@@ -163,7 +179,9 @@ const {
 						📬
 					</div>
 
-					<h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2" style="font-family: 'Fredoka', sans-serif;">Don't Miss a Move!</h3>
+					<h3 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-2" style="font-family: 'Montserrat', sans-serif;">
+						Don't Miss a Move!
+					</h3>
 
 					<p class="text-slate-600 mb-6 leading-relaxed">
 						Get Coach Chris's <strong class="text-orange-500">once-a-month email</strong> with everywhere he's teaching across Florida! 🌴
@@ -184,14 +202,19 @@ const {
 						<button
 							type="submit"
 							class="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-slate-900 font-bold py-4 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all text-lg"
+							style="font-family: 'Montserrat', sans-serif;"
 						>
 							Subscribe! 🚀
 						</button>
 					</form>
 
-					<p class="text-xs text-slate-400 mt-4">No spam, ever. Unsubscribe anytime. We only email once a month! ✨</p>
+					<p class="text-xs text-slate-400 mt-4" style="font-family: 'Space Mono', monospace;">NO SPAM, EVER. UNSUBSCRIBE ANYTIME.</p>
 
-					<button id="noThanks" class="mt-4 text-sm text-slate-400 hover:text-slate-600 underline transition-colors">
+					<button
+						id="noThanks"
+						class="mt-4 text-sm text-slate-400 hover:text-slate-600 underline transition-colors"
+						style="font-family: 'Montserrat', sans-serif;"
+					>
 						No thanks, maybe later
 					</button>
 				</div>
@@ -229,7 +252,7 @@ const {
 			/* === EMAIL POPUP === */
 			const POPUP_COOKIE_NAME = 'sunshinePopupClosed';
 			const POPUP_COOKIE_DAYS = 30;
-			const POPUP_DELAY_MS = 4000; // Show after 4 seconds
+			const POPUP_DELAY_MS = 4000;
 
 			const popup = document.getElementById('emailPopup');
 			const popupBackdrop = document.getElementById('popupBackdrop');
@@ -237,13 +260,12 @@ const {
 			const popupNoThanks = document.getElementById('noThanks');
 			const popupForm = document.getElementById('popupForm');
 
-			// Cookie helpers
 			function setCookie(name: string, value: string, days: number) {
 				const expires = new Date(Date.now() + days * 864e5).toUTCString();
 				document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax';
 			}
 
-			function getCookie(name: string) {
+			function getCookie(name: string): string {
 				return document.cookie.split('; ').reduce((r, v) => {
 					const parts = v.split('=');
 					return parts[0] === name ? decodeURIComponent(parts[1]) : r;
@@ -262,30 +284,25 @@ const {
 				document.body.classList.add('overflow-hidden');
 			}
 
-			// Show after delay
 			setTimeout(() => {
 				showPopup();
 			}, POPUP_DELAY_MS);
 
-			// Close events
 			popupClose?.addEventListener('click', closePopup);
 			popupNoThanks?.addEventListener('click', closePopup);
 			popupBackdrop?.addEventListener('click', closePopup);
 
-			// Form submit
 			popupForm?.addEventListener('submit', (e) => {
 				e.preventDefault();
 				const emailInput = document.getElementById('popupEmail') as HTMLInputElement | null;
 				const email = emailInput?.value;
 
-				// TODO: Connect to your email service (Mailchimp, ConvertKit, etc.)
 				console.log('Newsletter signup:', email);
 
-				// Show success state
 				popupForm.innerHTML = `
 					<div class="text-center py-4">
 						<div class="text-5xl mb-3">🎉</div>
-						<h4 class="text-xl font-bold text-slate-800 mb-2">You're In!</h4>
+						<h4 class="text-xl font-bold text-slate-800 mb-2" style="font-family: 'Montserrat', sans-serif;">You're In!</h4>
 						<p class="text-slate-600">Watch your inbox for Coach Chris's next update!</p>
 					</div>
 				`;
