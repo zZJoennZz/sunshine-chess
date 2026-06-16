@@ -1,0 +1,346 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About Coach Chris | Sunshine Chess">
+    <!-- PAGE HERO -->
+    <section class="relative bg-gradient-to-br from-yellow-100 via-orange-50 to-coral-50 py-20 lg:py-28 overflow-hidden">
+        <div class="absolute top-20 left-10 w-32 h-32 bg-yellow-300 rounded-full opacity-40 blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-coral-300 rounded-full opacity-30 blur-3xl animate-pulse" style="animation-delay: 1s;">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Photo -->
+                <div class="relative">
+                    <div
+                        class="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-[2.5rem] p-3 transform -rotate-2 hover:rotate-0 transition-transform duration-500 shadow-2xl"
+                    >
+                        <div class="bg-white rounded-[2rem] overflow-hidden aspect-[4/5]">
+                            <img
+                                src="img/Coach Chris.JPG"
+                                alt="Coach Chris teaching chess to students in Florida"
+                                class="w-full h-full object-cover"
+                                loading="eager"
+                            />
+                        </div>
+                    </div>
+                    <!-- Floating Badge -->
+                    <div
+                        class="absolute -bottom-4 -right-4 bg-yellow-400 text-slate-800 px-6 py-3 rounded-full font-bold shadow-lg transform rotate-6 text-lg"
+                        style="font-family: 'Montserrat', sans-serif;"
+                    >
+                        15+ Years! 🎉
+                    </div>
+                </div>
+
+                <!-- Intro -->
+                <div>
+                    <span
+                        class="inline-block bg-yellow-300 text-slate-800 px-5 py-2 rounded-full font-bold text-sm mb-4"
+                        style="font-family: 'Montserrat', sans-serif;"
+                    >
+                        👋 MEET YOUR COACH
+                    </span>
+                    <h1
+                        class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6"
+                        style="font-family: 'Montserrat', sans-serif;"
+                    >
+                        I'm <span class="text-orange-500">Coach Chris</span>! 😎
+                    </h1>
+                    <p class="text-xl text-slate-600 mb-6 leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                        enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+
+                    <!-- Quick Stats -->
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white px-6 py-4 rounded-2xl shadow-md border-2 border-yellow-200 text-center">
+                            <span class="block text-3xl font-bold text-yellow-600" style="font-family: 'Montserrat', sans-serif;">15+</span>
+                            <span class="text-sm text-slate-600 font-medium">Years Teaching</span>
+                        </div>
+                        <div class="bg-white px-6 py-4 rounded-2xl shadow-md border-2 border-coral-200 text-center">
+                            <span class="block text-3xl font-bold text-coral-600" style="font-family: 'Montserrat', sans-serif;">500+</span>
+                            <span class="text-sm text-slate-600 font-medium">Happy Students</span>
+                        </div>
+                        <div class="bg-white px-6 py-4 rounded-2xl shadow-md border-2 border-purple-200 text-center">
+                            <span class="block text-3xl font-bold text-purple-600" style="font-family: 'Montserrat', sans-serif;">2200</span>
+                            <span class="text-sm text-slate-600 font-medium">USCF Rating</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MY STORY -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block bg-coral-100 text-coral-700 px-5 py-2 rounded-full font-bold text-sm mb-4"
+                    style="font-family: 'Montserrat', sans-serif;"
+                >
+                    📖 MY STORY
+                </span>
+                <h2 class="text-3xl lg:text-5xl font-bold text-slate-800 mb-4" style="font-family: 'Montserrat', sans-serif;">
+                    How I Fell in Love with <span class="text-orange-500">Chess</span> ♟️
+                </h2>
+            </div>
+
+            <div class="space-y-8 text-lg text-slate-600 leading-relaxed">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
+                    imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+                </p>
+
+                <div class="bg-yellow-50 rounded-2xl p-8 border-l-4 border-yellow-400 mt-6 mb-6">
+                    <p class="italic text-slate-700 font-medium">
+                        "Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam
+                        nunc, blandit vel, luctus pulvinar, hendrerit id, lorem."
+                    </p>
+                    <p class="text-sm text-slate-500 mt-3 font-bold" style="font-family: 'Space Mono', monospace;">
+                        — COACH CHRIS, ON HIS FIRST TOURNAMENT
+                    </p>
+                </div>
+
+                <p>
+                    Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed
+                    fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+                </p>
+
+                <p>
+                    Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend
+                    sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY I TEACH -->
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-sky-400 via-purple-500 to-pink-500 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5 text-white whitespace-nowrap select-none overflow-hidden" style="font-size: 12rem; line-height: 1;">
+            ♔♕♖♗♘♙♔♕♖♗♘♙
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="bg-white rounded-[2.5rem] p-8 lg:p-14 shadow-2xl">
+                <div class="text-center mb-10">
+                    <span
+                        class="inline-block bg-purple-100 text-purple-700 px-5 py-2 rounded-full font-bold text-sm mb-4"
+                        style="font-family: 'Montserrat', sans-serif;"
+                    >
+                        ❤️ MY MISSION
+                    </span>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-800 mb-4" style="font-family: 'Montserrat', sans-serif;">
+                        Why I Teach <span class="text-purple-500">Kids</span> Chess
+                    </h2>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-yellow-400 rounded-2xl flex items-center justify-center text-2xl shadow-md shrink-0">🧠</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-lg mb-1" style="font-family: 'Montserrat', sans-serif;">
+                                    Builds Critical Thinking
+                                </h3>
+                                <p class="text-slate-600">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-coral-400 rounded-2xl flex items-center justify-center text-2xl shadow-md shrink-0">🤝</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-lg mb-1" style="font-family: 'Montserrat', sans-serif;">
+                                    Teaches Sportsmanship
+                                </h3>
+                                <p class="text-slate-600">
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-400 rounded-2xl flex items-center justify-center text-2xl shadow-md shrink-0">🎯</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-lg mb-1" style="font-family: 'Montserrat', sans-serif;">
+                                    Boosts Focus & Patience
+                                </h3>
+                                <p class="text-slate-600">
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-green-400 rounded-2xl flex items-center justify-center text-2xl shadow-md shrink-0">🏆</div>
+                            <div>
+                                <h3 class="font-bold text-slate-800 text-lg mb-1" style="font-family: 'Montserrat', sans-serif;">
+                                    Builds Confidence
+                                </h3>
+                                <p class="text-slate-600">
+                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CREDENTIALS -->
+    <section class="py-16 lg:py-24 bg-yellow-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <span
+                    class="inline-block bg-orange-100 text-orange-700 px-5 py-2 rounded-full font-bold text-sm mb-4"
+                    style="font-family: 'Montserrat', sans-serif;"
+                >
+                    📜 CREDENTIALS
+                </span>
+                <h2 class="text-3xl lg:text-5xl font-bold text-slate-800 mb-4" style="font-family: 'Montserrat', sans-serif;">
+                    Experience & <span class="text-orange-500">Achievements</span>
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border-l-4 border-yellow-400 flex items-start gap-6">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-2xl flex items-center justify-center text-3xl shrink-0">🏅</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2" style="font-family: 'Montserrat', sans-serif;">
+                            National Chess Master Title
+                        </h3>
+                        <p class="text-slate-600">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border-l-4 border-coral-400 flex items-start gap-6">
+                    <div class="w-14 h-14 bg-coral-100 rounded-2xl flex items-center justify-center text-3xl shrink-0">🎓</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2" style="font-family: 'Montserrat', sans-serif;">Certified Chess Coach</h3>
+                        <p class="text-slate-600">
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border-l-4 border-purple-400 flex items-start gap-6">
+                    <div class="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center text-3xl shrink-0">🏆</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2" style="font-family: 'Montserrat', sans-serif;">State Championship Coach</h3>
+                        <p class="text-slate-600">
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-md border-l-4 border-green-400 flex items-start gap-6">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center text-3xl shrink-0">✅</div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2" style="font-family: 'Montserrat', sans-serif;">
+                            Step Up For Students Approved
+                        </h3>
+                        <p class="text-slate-600">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FUN FACTS -->
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <span
+                class="inline-block bg-sky-100 text-sky-700 px-5 py-2 rounded-full font-bold text-sm mb-4"
+                style="font-family: 'Montserrat', sans-serif;"
+            >
+                🎉 FUN FACTS
+            </span>
+            <h2 class="text-3xl lg:text-5xl font-bold text-slate-800 mb-6" style="font-family: 'Montserrat', sans-serif;">
+                Get to Know Me <span class="text-sky-500">Better</span>
+            </h2>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                <div
+                    class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-3xl p-8 border-4 border-yellow-200 text-center hover:shadow-lg transition-shadow"
+                >
+                    <span class="text-5xl block mb-3">☕</span>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Favorite Drink</h3>
+                    <p class="text-slate-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-coral-50 to-pink-50 rounded-3xl p-8 border-4 border-coral-200 text-center hover:shadow-lg transition-shadow"
+                >
+                    <span class="text-5xl block mb-3">🎵</span>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Pre-Game Jam</h3>
+                    <p class="text-slate-600">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl p-8 border-4 border-purple-200 text-center hover:shadow-lg transition-shadow"
+                >
+                    <span class="text-5xl block mb-3">🏖️</span>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">When Not Teaching</h3>
+                    <p class="text-slate-600">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-green-50 to-teal-50 rounded-3xl p-8 border-4 border-green-200 text-center hover:shadow-lg transition-shadow"
+                >
+                    <span class="text-5xl block mb-3">♟️</span>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Favorite Chess Piece</h3>
+                    <p class="text-slate-600">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 lg:py-24 bg-gradient-to-r from-orange-400 via-coral-500 to-purple-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6" style="font-family: 'Montserrat', sans-serif;">
+                Ready to Learn from Coach Chris? 🚀
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                Join hundreds of Florida kids already having fun and winning trophies! Your first move starts here.
+            </p>
+
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a
+                    href="/register"
+                    class="bg-white text-coral-500 px-10 py-5 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all inline-flex items-center gap-2"
+                    style="font-family: 'Montserrat', sans-serif;"
+                >
+                    Register Now! 🚀
+                </a>
+                <a
+                    href="/lessons"
+                    class="bg-transparent text-white px-10 py-5 rounded-full text-xl font-bold border-4 border-white hover:bg-white/10 transition-all inline-flex items-center gap-2"
+                    style="font-family: 'Montserrat', sans-serif;"
+                >
+                    See All Lessons 📚
+                </a>
+            </div>
+        </div>
+    </section>
+</Layout>

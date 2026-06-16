@@ -1,0 +1,759 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Sunshine Chess | Frequently Asked Questions ❓">
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-br from-yellow-100 via-orange-50 to-coral-50 py-16 lg:py-24 overflow-hidden">
+        <!-- Fun Background Blobs -->
+        <div class="absolute top-20 left-10 w-32 h-32 bg-yellow-300 rounded-full opacity-40 blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-40 h-40 bg-coral-300 rounded-full opacity-30 blur-3xl animate-pulse" style="animation-delay: 1s;">
+        </div>
+        <div class="absolute top-1/2 left-1/4 w-24 h-24 bg-purple-300 rounded-full opacity-20 blur-xl animate-pulse" style="animation-delay: 2s;">
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <!-- Fun Badge -->
+                <div
+                    class="inline-flex items-center gap-2 bg-white px-5 py-3 rounded-full shadow-lg border-3 border-yellow-400 mb-6 transform hover:scale-105 transition-transform"
+                >
+                    <span class="text-xl">❓</span>
+                    <span class="font-bold text-slate-800 text-sm lg:text-base">Got Questions? We Got Answers!</span>
+                </div>
+
+                <h1
+                    class="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-800 leading-tight mb-6"
+                    style="font-family: 'Montserrat', sans-serif;"
+                >
+                    Frequently Asked
+                    <span class="relative inline-block">
+                        <span class="text-orange-500">Questions</span>
+                        <span class="absolute -bottom-2 left-0 w-full h-4 bg-yellow-300 rounded-full -z-10 opacity-60"></span>
+                    </span>
+                    🤔
+                </h1>
+
+                <p class="text-lg lg:text-xl text-slate-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Everything you need to know about <strong class="text-orange-500">Sunshine Chess</strong> classes, schedules, and how to get started!
+                    🌞
+                </p>
+
+                <!-- Quick Contact CTA -->
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a href="/register" class="btn-fun text-white px-8 py-4 text-lg font-bold inline-flex items-center gap-2">Ready to Join? 🚀</a>
+                    <a
+                        href="/contact"
+                        class="bg-white text-slate-700 px-8 py-4 rounded-full text-lg font-bold border-4 border-yellow-300 hover:bg-yellow-50 hover:border-yellow-400 transition-all inline-flex items-center gap-2 shadow-lg"
+                    >
+                        Contact Us 📞
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTIONS -->
+    <section class="lg:py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <!-- Getting Started -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center text-2xl shadow-lg">🚀</div>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-slate-800" style="font-family: 'Montserrat', sans-serif;">Getting Started</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border-2 border-yellow-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-yellow-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">How do I sign my child up for chess classes?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-yellow-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    Signing up is super easy! Just click the <strong class="text-orange-500">"Register Now"</strong> button and fill out
+                                    our quick registration form. You can also call us at <strong>(305) 555-CHESS</strong> and we'll help you get started!
+                                    📋
+                                </p>
+                                <p class="text-slate-600 leading-relaxed">
+                                    We'll ask about your child's age, experience level, and preferred location so we can find the perfect class! 🎯
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border-2 border-yellow-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-yellow-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">What age groups do you teach?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-yellow-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    We teach kids from <strong class="text-orange-500">ages 5 to 16</strong>! Here's how we group them: 🎂
+                                </p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Beginners (Ages 5-12):</strong> Learning the basics with fun games!
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-coral-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Intermediate (Ages 8-14):</strong> Building tactics and strategy!
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Advanced (Ages 10-16):</strong> Tournament prep and mastery!
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Don't worry if your child doesn't fit perfectly — we place based on skill level, not just age! 😊
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item bg-gradient-to-br from-yellow-50 to-orange-50 rounded-2xl border-2 border-yellow-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-yellow-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Does my child need any chess experience?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-yellow-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-orange-500">Nope!</strong> We love beginners! 🌟 Coach Chris specializes in teaching kids who have
+                                    never touched a chess piece before. We start from scratch with fun stories and games.
+                                </p>
+                                <p class="text-slate-600 leading-relaxed">
+                                    If your child already knows how to play, we'll assess their level and place them in the right group. Every kid
+                                    starts somewhere, and we make sure it's fun! 🎮
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classes & Schedule -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 bg-coral-400 rounded-full flex items-center justify-center text-2xl shadow-lg">📅</div>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-slate-800" style="font-family: 'Montserrat', sans-serif;">Classes & Schedule</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item bg-gradient-to-br from-coral-50 to-pink-50 rounded-2xl border-2 border-coral-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-coral-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-coral-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">How long are the classes?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-coral-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    Our standard classes are <strong class="text-coral-500">60 minutes</strong> long — perfect for keeping kids engaged
+                                    without losing focus! ⏰
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">Here's what a typical class looks like:</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="text-coral-400 font-bold">10 min</span> — Warm-up puzzles & review
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="text-coral-400 font-bold">20 min</span> — New lesson & concepts
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="text-coral-400 font-bold">20 min</span> — Practice games with friends
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="text-coral-400 font-bold">10 min</span> — Fun wrap-up & challenges!
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Advanced tournament prep classes may run <strong>90 minutes</strong> for older students. 🏆
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item bg-gradient-to-br from-coral-50 to-pink-50 rounded-2xl border-2 border-coral-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-coral-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-coral-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Where are classes held?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-coral-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    We hold classes <strong class="text-coral-500">all across Florida</strong>! 🌴 Here are some of our popular
+                                    locations:
+                                </p>
+                                <div class="grid md:grid-cols-3 gap-3 mb-3">
+                                    <div class="bg-white rounded-xl p-3 text-center shadow-sm">
+                                        <span class="text-2xl">🏖️</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-1">South Florida</p>
+                                        <p class="text-xs text-slate-500">Miami, Fort Lauderdale, Boca Raton</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-3 text-center shadow-sm">
+                                        <span class="text-2xl">🎢</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-1">Central Florida</p>
+                                        <p class="text-xs text-slate-500">Orlando, Tampa, St. Petersburg</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-3 text-center shadow-sm">
+                                        <span class="text-2xl">🌲</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-1">North Florida</p>
+                                        <p class="text-xs text-slate-500">Jacksonville, Gainesville, Tallahassee</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Classes are held at local schools, community centers, libraries, and parks. We also offer <strong
+                                        class="text-coral-500"
+                                    >
+                                        online classes
+                                    </strong> via Zoom! 💻
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item bg-gradient-to-br from-coral-50 to-pink-50 rounded-2xl border-2 border-coral-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-coral-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-coral-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">How often are classes?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-coral-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">We offer flexible schedules to fit your family's busy life! 🗓️</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-coral-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Weekly Classes:</strong> Once a week (most popular!)
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-coral-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Twice Weekly:</strong> For faster progress
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-coral-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Summer Camps:</strong> Week-long intensive programs
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-coral-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Private Lessons:</strong> Custom scheduling
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Most families choose <strong class="text-coral-500">one class per week</strong> — it's the sweet spot for learning without
+                                    overwhelming your schedule! ⭐
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing & Scholarships -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-2xl shadow-lg">💰</div>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-slate-800" style="font-family: 'Montserrat', sans-serif;">
+                        Pricing & Scholarships
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl border-2 border-purple-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-purple-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">How much do classes cost?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-purple-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">We have options for every budget! Here's our pricing: 💵</p>
+                                <div class="grid md:grid-cols-3 gap-3 mb-3">
+                                    <div class="bg-white rounded-xl p-4 text-center shadow-sm border-2 border-yellow-300">
+                                        <span class="text-3xl font-bold text-slate-800">$45</span>
+                                        <span class="text-slate-500 text-sm">/class</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-2">Beginners 🌱</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-4 text-center shadow-sm border-2 border-coral-300">
+                                        <span class="text-3xl font-bold text-slate-800">$55</span>
+                                        <span class="text-slate-500 text-sm">/class</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-2">Intermediate ⚡</p>
+                                    </div>
+                                    <div class="bg-white rounded-xl p-4 text-center shadow-sm border-2 border-purple-300">
+                                        <span class="text-3xl font-bold text-slate-800">$65</span>
+                                        <span class="text-slate-500 text-sm">/class</span>
+                                        <p class="font-bold text-slate-700 text-sm mt-2">Advanced 👑</p>
+                                    </div>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed">
+                                    We also offer <strong class="text-purple-500">monthly packages</strong> with discounts and sibling rates! Ask us about
+                                    family deals! 👨‍👩‍👧‍👦
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 8 -->
+                    <div class="faq-item bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl border-2 border-purple-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-purple-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">What is Step Up For Students?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-purple-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-purple-500">Step Up For Students</strong> is a Florida scholarship program that can make chess classes
+                                    <strong class="text-purple-500">completely FREE</strong> for qualifying families! 🎓✨
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">If your family qualifies, the scholarship covers:</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        All class fees
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Tournament entry fees
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Chess materials & supplies
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    We're an <strong>approved provider</strong>! Contact us and we'll walk you through the application process step by
+                                    step. 📋
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 9 -->
+                    <div class="faq-item bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl border-2 border-purple-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-purple-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Do you offer sibling discounts?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-purple-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-purple-500">Yes!</strong> We love chess families! 👨‍👩‍👧‍👦
+                                </p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>2nd child:</strong> 10% off
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>3rd child:</strong> 20% off
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>4th+ child:</strong> 30% off
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    The more kids learning chess, the merrier! Sibling discounts stack with monthly packages too! 🎉
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tournaments & Competitions -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 bg-sky-400 rounded-full flex items-center justify-center text-2xl shadow-lg">🏆</div>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-slate-800" style="font-family: 'Montserrat', sans-serif;">
+                        Tournaments & Competitions
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 10 -->
+                    <div class="faq-item bg-gradient-to-br from-sky-50 to-teal-50 rounded-2xl border-2 border-sky-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-sky-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 bg-sky-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0">
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Do you host chess tournaments?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-sky-500">Absolutely!</strong> We host fun, friendly tournaments throughout the year! 🏆✨
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">Our tournament schedule includes:</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>In-House Tournaments:</strong> Monthly fun events for our students
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Regional Events:</strong> Compete against other Florida chess clubs
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>State Championships:</strong> For our advanced players
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        <strong>Online Tournaments:</strong> Compete from home!
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Every participant gets a certificate, and winners take home <strong class="text-sky-500">
+                                        trophies and medals
+                                    </strong>! 🥇🥈🥉
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 11 -->
+                    <div class="faq-item bg-gradient-to-br from-sky-50 to-teal-50 rounded-2xl border-2 border-sky-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-sky-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 bg-sky-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0">
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Does my child need to compete?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-sky-500">Not at all!</strong> Competition is completely optional. 😊
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    Many of our students just come to learn, have fun, and make friends. We encourage a <strong>no-pressure</strong> environment
+                                    where kids can explore chess at their own pace.
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">That said, when kids ARE ready, we make tournaments:</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Fun and friendly (not scary!)
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Grouped by skill level
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-sky-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Everyone gets recognized
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    Your child sets the pace — we're here to support whatever feels right! 🌟
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materials & What to Bring -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center text-2xl shadow-lg">🎒</div>
+                    <h2 class="text-2xl lg:text-3xl font-bold text-slate-800" style="font-family: 'Montserrat', sans-serif;">
+                        Materials & What to Bring
+                    </h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 12 -->
+                    <div class="faq-item bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border-2 border-green-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-green-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">What should my child bring to class?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-green-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    Just bring a <strong class="text-green-500">smile</strong> and a <strong class="text-green-500">
+                                        willingness to learn
+                                    </strong>! 😄 We provide everything else:
+                                </p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Chess sets and boards
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Workbooks and learning materials
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Pencils and notepads
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Snacks and water (at most locations)
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    If your child has their own chess set they love, they're welcome to bring it! We also recommend a <strong>
+                                        water bottle
+                                    </strong> for longer classes. 💧
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 13 -->
+                    <div class="faq-item bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl border-2 border-green-200 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between p-6 text-left hover:bg-green-100/50 transition-colors">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center text-white font-bold text-sm shrink-0"
+                                >
+                                    Q
+                                </span>
+                                <span class="font-bold text-slate-800 text-lg">Do you offer online classes?</span>
+                            </div>
+                            <span class="faq-icon text-2xl text-green-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer hidden px-6 pb-6">
+                            <div class="pl-11">
+                                <p class="text-slate-600 leading-relaxed mb-3">
+                                    <strong class="text-green-500">Yes!</strong> We offer live online classes via Zoom for families who prefer learning
+                                    from home. 💻
+                                </p>
+                                <p class="text-slate-600 leading-relaxed mb-3">Online classes include:</p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Live instruction from Coach Chris
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Interactive chess boards on screen
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Small group sizes (max 8 kids)
+                                    </li>
+                                    <li class="flex items-center gap-2 text-slate-700">
+                                        <span class="w-6 h-6 bg-green-400 rounded-full flex items-center justify-center text-white text-xs">✓</span>
+                                        Digital worksheets and puzzles
+                                    </li>
+                                </ul>
+                                <p class="text-slate-600 leading-relaxed">
+                                    All you need is a computer/tablet with internet! We can even mail physical chess sets to online students if
+                                    needed. 📦
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Still Have Questions -->
+            <div
+                class="bg-gradient-to-br from-yellow-100 via-orange-50 to-coral-50 rounded-[2rem] p-8 lg:p-12 text-center border-4 border-yellow-300 shadow-xl"
+            >
+                <span class="text-5xl mb-4 block">📞</span>
+                <h2 class="text-2xl lg:text-3xl font-bold text-slate-800 mb-4" style="font-family: 'Montserrat', sans-serif;">
+                    Still Have Questions?
+                </h2>
+                <p class="text-lg text-slate-600 mb-6 max-w-xl mx-auto">
+                    No problem! Coach Chris and our team are happy to help. Reach out anytime and we'll get back to you within 24 hours! 🌞
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center">
+                    <a
+                        href="tel:3055552437"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-slate-800 px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:shadow-xl hover:scale-105 transition-all inline-flex items-center gap-2"
+                    >
+                        📞 (305) 555-CHESS
+                    </a>
+                    <a
+                        href="mailto:hello@sunshinechess.com"
+                        class="bg-white hover:bg-yellow-50 text-slate-700 px-8 py-4 rounded-full text-lg font-bold border-4 border-yellow-300 hover:border-yellow-400 transition-all inline-flex items-center gap-2 shadow-lg"
+                    >
+                        ✉️ Email Us
+                    </a>
+                </div>
+                <p class="text-slate-500 mt-4 text-sm">Or visit us at our main location in FL 🌴</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-16 lg:py-24 bg-gradient-to-r from-orange-400 via-coral-500 to-purple-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl lg:text-5xl font-bold text-white mb-6" style="font-family: 'Montserrat', sans-serif;">
+                Ready to Start Your Chess Adventure? 🚀
+            </h2>
+            <p class="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+                All your questions answered? Let's get your child signed up and playing chess today!
+            </p>
+
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a
+                    href="/register"
+                    class="bg-white text-coral-500 px-10 py-5 rounded-full text-xl font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all inline-flex items-center gap-2"
+                >
+                    Register Now! 🎉
+                </a>
+                <a
+                    href="/lessons"
+                    class="bg-transparent text-white px-10 py-5 rounded-full text-xl font-bold border-4 border-white hover:bg-white/10 transition-all inline-flex items-center gap-2"
+                >
+                    See All Lessons 📚
+                </a>
+            </div>
+
+            <p class="text-white/80 mt-6 text-sm">⭐ Step Up For Students scholarships accepted!</p>
+        </div>
+    </section>
+
+    <style>
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-answer {
+            transition: all 0.3s ease;
+        }
+        .faq-answer:not(.hidden) {
+            animation: slideDown 0.3s ease;
+        }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-icon.rotate-180 {
+            transform: rotate(180deg);
+        }
+    </style>
+
+    <script>
+        // FAQ Accordion functionality
+        document.addEventListener('DOMContentLoaded', function (): void {
+            const toggles: NodeListOf<Element> = document.querySelectorAll('.faq-toggle');
+
+            toggles.forEach((toggle: Element): void => {
+                toggle.addEventListener('click', function (this: Element): void {
+                    const item: Element | null = this.closest('.faq-item');
+                    if (!item) return;
+
+                    const answer: Element | null = item.querySelector('.faq-answer');
+                    const icon: Element | null = item.querySelector('.faq-icon');
+                    if (!answer || !icon) return;
+
+                    const isOpen: boolean = !answer.classList.contains('hidden');
+
+                    // Close all other items
+                    document.querySelectorAll('.faq-answer').forEach((a: Element): void => a.classList.add('hidden'));
+                    document.querySelectorAll('.faq-icon').forEach((i: Element): void => i.classList.remove('rotate-180'));
+
+                    // Toggle current item
+                    if (!isOpen) {
+                        answer.classList.remove('hidden');
+                        icon.classList.add('rotate-180');
+                    }
+                });
+            });
+        });
+    </script>
+</Layout>
